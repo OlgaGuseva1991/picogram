@@ -25,6 +25,7 @@ class Image extends React.Component {
             <Link to="/image/:image.id">
               <img src={"http://localhost:8081/" + image.file} alt={image.description} className="picogram-image" />
               <span className="picogram-image-description">{image.description}</span>
+
             </Link>
           </div>
         )}

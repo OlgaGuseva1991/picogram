@@ -13,7 +13,7 @@
 }
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 18px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -2345,9 +2345,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: 16px;
-  color: #333;
-  background: #eee;
+  font-size: 24px;
+  color: #256baf;
+  background: rgba(23, 43, 142, 0.23);
 }
 a {
   color: #369;

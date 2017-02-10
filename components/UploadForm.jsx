@@ -46,7 +46,7 @@ class RegisterForm extends React.Component {
           {this.state.imageUrl !== '' ? null :
           <Dropzone
             onDrop={this.onImageDrop.bind(this)}
-            multiple={false}
+            multiple={true}
             accept="image/*">
             <div>Drop an image or click to select a file to upload.</div>
           </Dropzone>}
