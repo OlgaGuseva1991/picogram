@@ -1,0 +1,16 @@
+students-iMac:picogram student$ git checkout develop
+Branch develop set up to track remote branch develop from origin.
+Switched to a new branch 'develop'
+students-iMac:picogram student$ npm install
+
+
+> fsevents@1.0.17 install /Users/student/projects/picogram/node_modules/fseve
+nts
+> node-pre-gyp install --fallback-to-build
+
+[fsevents] Success: "/Users/student/projects/picogram/node_modules/fsevents/l
+ib/binding/Release/node-v48-darwin-x64/fse.node" already installed
+Pass --update-binary to reinstall or --build-from-source to recompile
+app@0.0.0 /Users/student/projects/picogram
+
+students-iMac:picogram student$ npm run dev
