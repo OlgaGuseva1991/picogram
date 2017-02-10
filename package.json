@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jankos/app.git"
+    "url": "git+https://github.com/jankosacc/picogram.git"
   },
-  "author": "jankos <janis.koselevs@gmail.com>",
+  "author": "jankosacc <janis.koselevs@accenture.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jankos/app/issues"
+    "url": "https://github.com/jankosacc/picogram/issues"
   },
-  "homepage": "https://github.com/jankos/app#readme",
+  "homepage": "https://github.com/jankosacc/picogram#readme",
   "devDependencies": {
     "axios": "^0.15.3",
     "babel-core": "^6.22.1",
