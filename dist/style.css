@@ -13,7 +13,7 @@
 }
 .fa {
   display: inline-block;
-  font: normal normal normal 18px/1 FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -2335,17 +2335,27 @@
   overflow: visible;
   clip: auto;
 }
-html {
-  width: 100%;
-  height: 100%;
+.shadow {
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #999;
+}
+.gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,000000+100&0+0,1+100 */
+  background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 0%, #000000 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 0%, #000000 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, #000000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007db9e8', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
 }
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   color: #256baf;
   background: rgba(23, 43, 142, 0.23);
 }
@@ -2353,31 +2363,22 @@ a {
   color: #369;
   text-decoration: underline;
 }
-.picogram {
+.picogram-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4.5rem;
+  background: rgba(83, 146, 6, 0.64);
   width: 100%;
-  height: 100%;
-}
-.picogram-page {
-  width: 100%;
-  height: 100%;
-}
-.picogram-page-login {
-  width: 100%;
-  height: 100%;
-  background-image: url(images/background.jpg);
-  background-size: cover;
-  text-align: center;
-}
-.picogram-page-register {
-  width: 100%;
-  height: 100%;
-  background-image: url(images/background.jpg);
-  background-size: cover;
-  text-align: center;
+  text-align: left;
+  z-index: 2;
+  -moz-box-shadow: 0 0 5px #999;
+  -webkit-box-shadow: 0 0 5px #999;
+  box-shadow: 0 0 5px #999;
 }
 .picogram-logo {
   margin: 0;
-  padding: 2rem 1rem;
+  padding: 1rem;
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-weight: normal;
 }
@@ -2392,34 +2393,63 @@ a {
   padding: 1rem;
   font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-weight: normal;
-}
-.picogram-loginform,
-.picogram-registerform {
   text-align: center;
 }
-.picogram-loginform label,
-.picogram-registerform label {
-  display: block;
-  padding: 0.5rem;
-  text-transform: capitalize;
+.picogram-content {
+  padding-top: 4.5em;
 }
-.picogram-loginform input,
-.picogram-registerform input {
+.picogram-image-wrapper {
+  float: left;
+  position: relative;
+  width: 25%;
+}
+.picogram-image-wrapper:after {
+  content: '';
   display: block;
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: 16px;
-  margin: 0 auto;
-  padding: 0.2rem;
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,000000+100&0+0,1+100 */
+  background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 0%, #000000 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 0%, #000000 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, #000000 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007db9e8', endColorstr='#000000', GradientType=0);
+  /* IE6-9 */
+}
+.picogram-image {
+  display: block;
+  clip: rect(50px, 30px, 10px, 10px);
+  width: 300px;
+  max-height: 200px;
+}
+.picogram-image-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  z-index: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 50%;
+  margin: 1rem;
+}
+.picogram-add {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  margin-left: -3rem;
+}
+.picogram form {
   text-align: center;
 }
-.picogram-loginform button,
-.picogram-registerform button {
-  display: block;
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: 16px;
+.picogram-upload {
+  text-align: center;
+  width: 200px;
   margin: 1rem auto;
-  padding: 0.5rem 1rem;
-  border: 1px solid #999;
-  background: #ccc;
-  text-transform: capitalize;
 }

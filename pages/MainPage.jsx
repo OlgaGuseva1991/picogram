@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../components/Logo';
 import Images from '../components/Images';
 import AddButton from '../components/AddButton';
+import DeleteButton from '../components/DeleteButton';
 
 class MainPage extends React.Component {
   render() {
@@ -13,7 +14,10 @@ class MainPage extends React.Component {
         <div className="picogram-content">
           <Images />
         </div>
-        <AddButton />
+        <div className="picogram-button-container">
+          <AddButton />
+          <DeleteButton />
+        </div>
       </div>
     );
   }

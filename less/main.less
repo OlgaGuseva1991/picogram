@@ -43,7 +43,6 @@
     position: relative;
     width: 25%;
 
-
     &:after {
       content: '';
       display: block;
@@ -56,12 +55,18 @@
     }
   }
 
+  &-image-wrapper:hover {
+     z-index:10000;
+  }
+
   &-image {
     display: block;
-    clip: rect(50px, 30px, 10px, 10px);
-    width: 300px;
-    max-height: 200px;
+    width:100%;
+  }
 
+  &-image:hover {
+     transform: scale(1.5);
+     border: 3px solid #369;
   }
 
   &-image-description {
@@ -77,10 +82,31 @@
     margin: 1rem;
   }
 
-  &-add {
+  &-button-container {
     position: fixed;
-    bottom: 1rem;
-    left: 50%;
-    margin-left: -3rem;
+    left: 45%;
+    width:240px;
+    height:90px;
+    bottom: 0.5rem;
+  }
+
+  &-add {
+    display:inline-block;
+    position: fixed;
+    float:left;
+  }
+
+  &-delete {
+    background-image: url('../site_images/deletebutton.png');
+    background-size: contain;
+    position: relative;
+    display:inline-block;
+    float:right;
+    width:80px;
+    height:80px;
+  }
+
+  &-delete:hover {
+    cursor: pointer;
   }
 }

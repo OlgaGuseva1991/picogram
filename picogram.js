@@ -8,6 +8,7 @@ import ErrorPage from './pages/ErrorPage';
 
 require('font-awesome/css/font-awesome.css');
 require('./less/style.less');
+require('./scripts/test.js');
 
 class Picogram extends React.Component {
   render() {
